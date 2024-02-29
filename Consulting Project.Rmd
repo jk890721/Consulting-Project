@@ -1,9 +1,3 @@
----
-title: "Consulting_Project"
-author: "Cheng Yin Chuang"
-date: "2023-10-12"
-output: html_document
----
 ```{r}
 # libraries
 library(readr)
