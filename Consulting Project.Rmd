@@ -41,7 +41,6 @@ cleaned_data <- cleaned_data[,-8]
 cleaned_data <- cleaned_data[,-80]
 cleaned_data <- cleaned_data[,-129]
 cleaned_data <- cleaned_data[,-155]
-
 ```
 
 ```{r}
@@ -126,9 +125,6 @@ barplot(table(demographic_data$Age), main = "Age distribution", xlab = "Age", yl
 
 trial2 <- demographic_data %>% select( Gender, Immigrant, Refugee, Community, School, Income, Country, State )
 trial2 %>% tbl_summary()
-
-
-
 ```
 
 ```{r}
@@ -194,7 +190,6 @@ qqline(residuals(SE_model))
 plot(SE_model)
 
 vif(SE_model)
-
 ```
 
 ```{r}
@@ -252,7 +247,6 @@ ggplot(rank, aes(x = rank_name, y = ranked)) +
     plot.title = element_text(size = 24, hjust = 0.5),
     axis.text = element_text(size = 12)
   )
-
 ```
 
 ```{r}
@@ -333,6 +327,4 @@ ggplot(my_dataset, aes(x=Entity, y=mean_scaled, color=cluster)) +
   geom_point(size=4) +
   theme(axis.text.x = element_text(angle=45, hjust=1)) +
   labs(title="K-means Clustering of Coping Strategies", y="Standardized Mean", x="Coping Strategies")
-
-
 ```
